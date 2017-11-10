@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Party from '../assets/party.gif'
 
 class AgeStats extends Component {
     constructor(props){
@@ -20,6 +21,7 @@ class AgeStats extends Component {
             <div>
                 <h3>{this.props.date}</h3>
                 <h4>congrats on {this.timeSince(this.props.date)}</h4>
+                <img src={Party} alt='party' className='party'/>
             </div>
         )
     }
